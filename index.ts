@@ -191,7 +191,9 @@ const sessions: Session[] = [];
         res.sendFile(path.resolve(`./uploads/${req.params.filename}`));
     });
 
-    app.listen(3000);
+    app.listen(3000, () => {
+        console.log(`port 3000`);
+    });
 })();
 
 // const client = new MongoClient(process.env.MYSQL_HOST || ``, {
