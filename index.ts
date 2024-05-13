@@ -29,7 +29,6 @@ const sessions: Session[] = [];
 (async () => {
     const connection = await mysql.createConnection({
         host: process.env.MYSQL_HOST,
-        port: 31332,
         database: process.env.MYSQL_DATABASE,
         user: process.env.MYSQL_USER,
         password: process.env.MYSQL_PASSWORD
