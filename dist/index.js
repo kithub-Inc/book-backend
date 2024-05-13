@@ -31,6 +31,7 @@ const sessions = [];
 (() => __awaiter(void 0, void 0, void 0, function* () {
     const connection = yield promise_1.default.createConnection({
         host: process.env.MYSQL_HOST,
+        port: 31332,
         database: process.env.MYSQL_DATABASE,
         user: process.env.MYSQL_USER,
         password: process.env.MYSQL_PASSWORD
